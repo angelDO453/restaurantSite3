@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!---------------------------------------------------
+Name: Angel D. Ortiz
+Date Created: 9/14/2018
+Most recent revision: 9/6/2018
+Description: menu.html - Site used to show our proficiency in making tables.
+ An example website used for the software guild
+course. The purpose of this website is to give us a foundation 
+on html coding without a .css file. 
+----------------------------------------------------->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<title>Menu</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+
+<body>
+<div class="container">
+
+	<header class ="jumbotron">
+		<h1>Sizzling Hotdogs</h1>
+		<h2 class="text-center mt-1">Great News!!!</h2>
+		<h3 class="text-center"> Opening a New Location at<br />604 Dream Dr., Dallas, Texas, 75123</h3>
+		<h5 class="text-center">(right next door)</h5>
+		
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		
+		<style>
+		<!--internal stylesheet for menu -->
+		.row p {
+			text-align: center;
+		}
+		.clearBoth {
+			clear:both;
+		}
+		.row {
+			margin: auto;
+			text-align: center;
+		}
+		.itemName {
+			
+		}
+		body {<!-- had to get rid of the background image-->
+			margin: auto;
+			background-color: lightblue;
+			background-image: url("");
+		}
+		table, th, td { <!-- format the table, make more user friendly-->
+			border: 1px solid black; <!-- very dark blue -->
+			padding: 5px 10px 10px;
+			border-right: 1px solid #000 !important;
+			border-left: 1px solid #000 !important;
+				
+		}
+		table {
+
+			width: 90%;
+			margin: auto;
+				
+		}
+		tr {
+			height: 30px;
+		}
+		th {
+			background-color: #546a7b;<!-- grey blue -->
+			color: #f2eded;<!-- reddish white -->
+		}
+		tr:nth-child(odd){
+			background-color: #e4c3ad;<!--orange white -->
+		}
+		</style>
+	</header>
+	
+	<nav >
+		<div id="links"  >
+			<p><a class="btn badge-pill" href="index.html"> <i class="fa fa-home"></i> </a></p>
+			<p><a class="btn badge-pill" href="menu.html">Menu</a></p>
+			<p><a class="btn badge-pill" href="contact.html">Contact Us</a></p>
+		</div>
+	</nav>
+	
+	<body class="menu"><!--Used bootstrap to enable stacks on menu items-->
+		
+			<div class="row"><!-- three to a row -->
+				<div class="col-lg-4 col-md-4"><!--Choose 4 to center the grid of menu items-->
+					<p id="itemMenu1">
+					<strong>Chili Dog Classic</strong><br />
+					Home style chili<br />
+					Cheese and onions<br />
+					w/Ketchup<br />
+					6.75
+					</p >
+				</div>
+				<div class="col-lg-4 col-md-4">
+
+					<p id="itemMenu2">
+					<strong>Sizzling Chili Dog</strong><br />
+					Sizzling's spicy chili<br />
+					Cheese, onions, and relish<br />
+					w/Sauerkraut<br />
+					8.25
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-4">
+
+					<p id="itemMenu3">
+					<strong>Empire Dog</strong><br />
+					Sweet and spicy chili<br />
+					The Works<br />
+					w/Lay's chips<br />
+					12.13
+					</p>
+				</div>
+			
+			</div>
+			<div class="row"><!-- three to a row -->
+			
+				<div class="col-lg-4 col-md-4">
+
+					<p id="itemMenu4">
+					<strong>Kid Combo</strong><br />
+					Simple plain dog<br />
+					fries or a cup fruit<br />
+					w/Ketchup or Mustard<br />
+					4.85
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-4">
+
+					<p id="itemMenu5">
+					<strong>Veggie Dog</strong><br />
+					Sesame and peanut dog<br />
+					Kale, cabbage, and cucumber<br />
+					w/Relish and sriracha sauce<br />
+					10.25
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-4">
+
+					<p id="itemMenu6">
+					<strong>The Cold Dog</strong><br />
+					Vanilla and chocolate dog<br />
+					Chocolate and strawberry syrup<br />
+					9.50
+					</p>
+				</div>
+			</div>
+		
+			
+			<div class="row col-lg-6 col-md-6"> <!-- table has its own row -->
+				<table>
+				<thead>
+					<tr>
+						<th colspan="2">Beverages</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Coca Cola</td>
+						<td>&#36 2.00</td>
+					</tr>
+					<tr>
+						<td>Hotdog Soda</td>
+						<td>&#36 3.50</td>
+					</tr>
+					<tr>
+						<td>Dr. Thunder</td>
+						<td>&#36 1.00</td>
+					</tr>
+					<tr>
+						<td>Bottle Water</td>
+						<td>&#36 3.80</td>
+					</tr>
+				</tbody>
+				</table>
+				</div>
+	</body>
+	
+	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="images/news.png"  alt="First slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/monthlyDrink.png" alt="Second slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/newMenu.png"  alt="Third slide">
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<p> 603 Dream Dr., Dallas, Texas, 75123<br />
+			123-456-7890
+		</p>
+	</footer>
+
+</div>	
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

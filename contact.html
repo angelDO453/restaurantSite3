@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!---------------------------------------------------
+Name: Angel D. Ortiz
+Date Created: 9/14/2018
+Most recent revision: 9/6/2018
+Description: contact.html - site used to show our talent in making html forms.
+Bootstrap is used to create the forms. 
+An example website used for the software guild
+course. The purpose of this website is to give us a foundation 
+on html coding without a .css file. 
+----------------------------------------------------->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<title>Contact Us</title>
+	
+	<script type="text/JavaScript" src="contact.js"></script> <!--link to contact's javascript-->
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+
+<body>
+<div class="container">
+
+	<header class ="jumbotron">
+		<h1>Sizzling Hotdogs</h1>
+		<h2 class="text-center mt-1">Great News!!!</h2>
+		<h3 class="text-center"> Opening a New Location at<br />604 Dream Dr., Dallas, Texas, 75123</h3>
+		<h5 class="text-center">(right next door)</h5>
+		
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		
+		<style><!--simple internal style sheet to center the forms-->
+			section {<!--Did a couple inline styles because of how specific most of the forms were. alignment mostly-->
+				text-align: center;
+			}
+			.inputSpace {
+				padding-bottom: 10px;
+			}
+			.form-group {
+				margin: auto;
+				max-width: 400px;
+			}
+			
+		
+		</style>
+	</header>
+	
+	<nav>		
+		<div id="links">
+			<p><a class="btn badge-pill" href="index.html"> <i class="fa fa-home"></i> </a></p>
+			<p><a class="btn badge-pill" href="menu.html">Menu</a></p>
+			<p><a class="btn badge-pill" href="contact.html">Contact Us</a></p>
+		</div>	
+	</nav>
+	
+	<section ><!--some simple spacing styles -->
+		<article id="contactMe" style="padding-bottom: 20px">
+		
+		<div class="contact" >
+		<form action="" method="post" onsubmit="return validateForm()" name="myForm">
+			<div class="form-group">
+				<label for="formNameInput">Name</label>
+				<input type="text" class="form-control" name="formNameInput" placeholder="Name">
+
+			</div>
+			<div class="form-group">
+				<label for="exampleInputEmail">Email address</label>
+				<input type="email" class="form-control" name="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.(maybe)</small>
+			</div>
+			<div class="form-group">
+				<label for="formPhoneInput">Phone Number</label>
+				<input type="text" class="form-control" name="formPhoneInput" placeholder="Phone Number">
+			</div>
+		</div>
+		
+		 <div class="form-group" style="max-width: 25%; margin: auto"><!--put limit on width, taking up too much space -->
+			<label for="exampleFormControlSelect1">Reason for Inquiry</label>
+				<select class="form-control" id="exampleFormControlSelect1">
+					<option>Catering</option>
+					<option>Private</option>
+					<option>Feedback</option>
+					<option>Other</option>
+				</select>
+		</div>
+		
+		 <div class="form-group" style="padding-top: 2px">
+			<label for="exampleFormControlTextarea1">Additional Infromation:</label>
+			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" cols="50%"></textarea>
+		</div><!--limit width, too much space is unneeded -->
+		
+		<div id="radio" class="form-group" >
+			<legend>Have you been to the restaurant?</legend>
+
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+				<label class="form-check-label" for="inlineRadio1">Yes</label>
+			</div>
+			<div class="form-check form-check-inline"><!-- defaults to no-->
+				<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked>
+				<label class="form-check-label" for="inlineRadio2">No</label>
+			</div>
+		</div>
+
+		
+		<div style="margin: auto; align-text: center" class="form-group"><!--Has no default-->
+		<legend>Best days to contact you:</legend>
+			<label class="checkbox-inline">
+			<input id="checkboxID1" type="checkbox" value="M">M
+			</label>
+			<label class="checkbox-inline">
+			<input id="checkboxID2" type="checkbox" value="T">T
+			</label>
+			<label class="checkbox-inline">
+			<input id="checkboxID3" type="checkbox" value="W">W
+			<label class="checkbox-inline">
+			<input id="checkboxID4" type="checkbox" value="Th">Th
+			</label>
+			<label class="checkbox-inline">
+			<input id="checkboxID5" type="checkbox" value="F">F
+			</label>
+		</div>
+		
+		<div class="form-group">
+		<button type="submit" id="submit" class="btn btn-primary">Send Request</button>
+		</div>
+		
+		</form>
+		</article>
+	</section>
+	
+	<footer>
+		<p> 603 Dream Dr., Dallas, Texas, 75123<br />
+			123-456-7890
+		</p>
+	</footer>
+	
+</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+</body>
+
+</html>

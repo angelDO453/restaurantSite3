@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!---------------------------------------------------
+Name: Angel D. Ortiz
+Date Created: 9/14/2018
+Most recent revision: 9/16/2018
+Description: index.html - site showing our understanding in 
+making the basic structure of a webpage.
+An example website used for the software guild
+course. The purpose of this website is to give us a foundation 
+on html coding without a .css file. 
+----------------------------------------------------->
+<html lang="en">
+<head>
+	<meta charset="utf-8"> <!--send the browser basic information -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Home Page</title>
+	
+	<!--links to style sheet for bootstrap and awesome font-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
+</head>
+
+
+<body>
+
+<div class="container">
+	<header class ="jumbotron">
+		<h1>Sizzling Hotdogs</h1>
+		<h2 class="text-center mt-1">Great News!!!</h2><!--Went with blue(green could work) based off the background-->
+		<h3 class="text-center"> Opening a New Location at<br />604 Dream Dr., Dallas, Texas, 75123</h3>
+		<h5 class="text-center">(right next door)</h5>
+
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" /><!-- link to my stylesheet-->
+	</header>
+	
+	<nav>
+		<div id="links" ><!--used awesome font house icon. Also pill buttons-->
+			<p><a class="btn badge-pill" href="index.html"> <i class="fa fa-home"></i> </a></p>
+			<p><a class="btn badge-pill" href="menu.html">Menu</a></p>
+			<p><a class="btn badge-pill" href="contact.html">Contact Us</a></p>
+		</div>
+
+	</nav>
+	
+	<section>
+		<noscript><!--if the user has scipts disabled display message-->
+			<h1><u>This site is best viewed with JavaScript enabled</u></h1>
+		</noscript>
+		
+		<article id="restaurantDesc">
+		<div class="row"><!-- fixed image too much change will pixelate it-->
+			<img src="images/kitchen.jpg" alt="Sizzling's Kitchen" width="400" height="150" style="display: block; margin: 0 auto"/>
+				<p>
+				Restaurant Description.<br />
+				Conformity is the greatest enemy toward garment cuisine in the hotdog industry. Here at Sizzling
+				Hotdogs we combat this enemy by having our customers suggest changes to our menu. Each menu item 
+				rotates every six months in order to ensure fresh and new creations can be explored. But, don't worry if 
+				you have a favorite that is no longer on the menu, you can special request this item for a small fee. Each
+				ingredient used is decided by quality and not by price. Since Sizzling Hotdogs is committed to non-
+				conformity our restaurant is situated in the middle of a residential area. This home/business helps 
+				customers feel more relaxed in a traditional setting, like eating a meal at home. So, come down to 
+				Sizzling Hotdog for your dog today. Remember that parking is <strong>extremely</strong> limited in residential areas.  
+				</p>
+		</div>
+			
+		</article>	
+	</section>
+	<!--carousel to display general news, menu news, and drink of the month-->
+	<!--Starting the transition takes a while -->
+	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="images/news.png"  alt="First slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/monthlyDrink.png" alt="Second slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="images/newMenu.png"  alt="Third slide">
+			</div>
+		</div>
+	</div>
+	
+	<footer><!-- address for sizzlers-->
+		<p> 603 Dream Dr., Dallas, Texas, 75123<br />
+			123-456-7890
+		</p>
+	</footer>
+</div><!--javascripts for bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+/*---------------------------------------------------
+Name: Angel D. Ortiz
+Date Created: 9/14/2018
+Most recent revision: 9/6/2018
+Description: An example of an external sytle sheet used for the software guild
+course. The purpose of this .css file is to show our understanding
+of formatting html files and changing link states. 
+-----------------------------------------------------*/
+header , footer {
+	background-image: url("../images/hotdog.jpg");
+	color: brown;
+}
+h2 , h3	, h5{
+	color: blue;
+}
+header {	/* Reformat  text only for the header*/
+	font-family: calibri, Garamond, Comic Sans MS;
+}
+footer {
+	font-weight: bold;
+	padding-left: 2px;
+}
+article p {
+	text-align: center;
+	max-width:700px;
+    
+    font-family: arial, helvetica, sans-serif;
+	padding: 10px 0px 10px 0px;
+    color: #0d1f2d; /*Dark navy blue */
+	display: block; 
+    margin: 0 auto;
+}
+body {
+	padding-top: 10px;
+	background-image: url("../images/cardboard.jpg");
+	background-repeat: repeat;
+	background-position: float;
+}
+section {
+	padding-top: 10px;
+}
+nav {
+		overflow:hidden;/*the background image was stacking on top of the nav block */
+		background-color: orange;
+		height: 95px;/*added some space for when the links have to stack */
+		
+}
+nav a{
+	background-color: white;
+	color: brown;
+	padding-left: 8px;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	margin: 0px;
+	width: 100px;
+	float: left;
+}
+nav a:visited { /* change the format based on the state of the link */
+    color: green; 
+}			
+nav a:active {
+    background-color: brown;
+    color: white; 
+}
+nav a:hover {
+    font-weight: bold;
+	color: darkgreen;
+}
+#carouselExampleSlidesOnly img {/* Put a limit on the size in order to prevent distortion*/
+	max-height:400px;
+	max-width:800px;
+	margin: auto;
+}
+
+	
+
